@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(30, 38%, 92%);
+    height: 100vh;
+    padding: 0 410px 0 410px;
+}
+.main div{
+    height: 400px;
+}
+.image{
+    flex: 1;
+}
+.image img{
+    height: 400px;
+    width: fit-content;
+}
+.text{
+    flex: 1;
+    background: hsl(0, 0%, 100%);
+}
+.details{
+    padding: 30px;
+}
+/* .details h2{
+    
+} */
+.details .perfume{
+    padding-bottom: 20px;
+}
+.details .discription{
+    font-size: 14px;
+    padding: 20px 0;
+    line-height: 25px;
+}
+.details button{
+    padding: 7px 55px;
+    background: #2e8140;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.pricing{
+    font-size: 30px;
+    font:bold;
+    padding: 10px 0 20px 0;
+}
+.offer{
+    font-size: 12px;
+    
+    padding-bottom: 10px;
+}
+/* for mobile */
+@media screen and (max-width: 375px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 10px 15px 10px;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .main .image{
+        flex: 1;
+    }
+    .main .text{
+        flex: 2;
+    }
+}
